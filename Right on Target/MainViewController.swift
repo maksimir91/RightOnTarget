@@ -1,45 +1,48 @@
 //
-//  SecondViewController.swift
+//  MainViewController.swift
 //  Right on Target
 //
-//  Created by Stanislav Shut on 21.05.2024.
+//  Created by Stanislav Shut on 22.05.2024.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class MainViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
-        print("loadView SecondViewController")
+        print("loadView")
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewDidLoad SecondViewController")
+        print("viewDidLoad")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("viewWillAppear SecondViewController")
+        print("viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("viewDidAppear SecondViewController")
+        print("viewDidAppear")
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("viewWillDisappear SecondViewController")
+        print("viewWillDisappear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("viewDidDisappear SecondViewController")
+        print("viewDidDisappear")
     }
-    
-    @IBAction func hideCurrentScene() {
-        self.dismiss(animated: true,completion: nil)
+
+
+  
+    // MARK: - Navigation
+    @IBAction func previousScreen( unwindSegue: UIStoryboardSegue ) {
+        return
     }
 }
